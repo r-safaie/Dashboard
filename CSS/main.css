@@ -1,0 +1,125 @@
+@font-face{
+    font-family: yekan;
+    src: url('../Fonts/iranyekanwebbold.ttf') format("truetype");
+}
+
+*{
+    font-family:yekan ;
+}
+body{
+    background-color: #eee;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.sidebar{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,.7) , rgba(0,0,0,.9) ) , url(../images/sidebar-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow: -5px 7px 25px #999;
+}
+
+.bordering{
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+}
+
+.sidebar-link{
+    transition: all .4s;
+}
+
+.sidebar-link:hover{
+    border-radius: 5px;
+    background-color: #444;
+}
+.current{
+    border-radius: 5px;
+    background-color: #dc3545;
+    box-shadow: 2px 5px 5px rgba(0,0,0,.5);
+    transition: all .4s;
+}
+.current:hover{
+    background-color: #e62a3d!important;
+    transform: translateY(1px);
+}
+.sidbar_items{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.search{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.6);
+    color: rgba(255,255,255,8);
+    border-radius: 0%;
+    transition: all 0.4s;
+    
+}
+
+.search:focus{
+    background-color: transparent;
+    outline: none;
+    color: rgba(255,255,255,0.8);
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid #17a2b8;
+
+}
+
+.search::placeholder{
+    color: rgba(255,255,255,0.4);
+    font-size: 0.9rem;
+}
+.btn_search:hover .search_icon{
+    color: #000;
+}
+.search_icon{
+    color: rgba(255,255,255,0.8);
+}
+
+.topnav-icons{
+    color:#dc3545!important ;
+}
+
+/* cards */
+.card_style{
+   box-shadow: 1px 2px 5px #999;
+   transition: all 0.4s;
+   height: 100%;
+}
+.card_style:hover{
+    box-shadow: 4px 4px 15px #999;
+    transform: translateY(-1PX)
+}
+/* cards */
+
+/*task*/
+.task_style{
+    border-right: 3px solid #f66436;
+}
+/* ticket */
+.ticket_img_style{
+    width: 50px;
+    height: 50px;  
+}
+
+ @media (max-width:768px)  {
+    .sidebar{
+        position: static;
+        height: auto;
+    }
+    .top-navbar{
+        position: static;
+    } 
+
+   
+}
